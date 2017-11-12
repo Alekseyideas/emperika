@@ -1,7 +1,7 @@
 {
-  "name": "sharpex-project",
+  "name": "Emperika",
   "version": "1.0.0",
-  "description": "Sharpex Project",
+  "description": "Emperika Project",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
