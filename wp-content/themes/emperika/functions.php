@@ -63,7 +63,59 @@ if ( version_compare( get_bloginfo( 'version' ), '4.7.3', '>=' ) && ( is_admin()
 	}
 }
 add_filter('woocommerce_cart_needs_payment', '__return_false');
-/**
- * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
- * https://github.com/woocommerce/theme-customisations
- */
+
+
+function add_option_field_to_general_admin_page(){
+    $option_name = 'my_option';
+
+    // регистрируем опцию
+    register_setting( 'general', $option_name );
+
+    // добавляем поле
+    add_settings_field(
+        'myprefix_setting-id',
+        'My custom options',
+        'myprefix_setting_callback_function',
+        'general',
+        'default',
+        array(
+            'id' => 'myprefix_setting-id',
+            'option_name' => 'my_option'
+        )
+    );
+}
+add_action('admin_menu', 'add_option_field_to_general_admin_page');
+
+function myprefix_setting_callback_function( $val ){
+    $id = $val['id'];
+    $option_name = $val['option_name'];
+
+    echo '<input type="text" name="' . $option_name .'" id="' . $id . '" value="' . esc_attr( get_option($option_name) ) . '" />';
+}
+
+function my_more_options(){
+    register_setting('general','my_phone_options');
+
+
+
+    add_settings_field('phone','Номер телефона','display_phone','general');
+
+
+
+
+};
+add_action('admin_init', 'my_more_options');
+
+
+function display_phone(){
+    echo "<input type='text' name='my_phone_options' class='regular-text' value='". esc_attr(get_option('my_phone_options')) . "'>";
+};
+
+function front_phone(){
+    $val = get_option('my_phone_options');
+    echo trim($val);
+}
+
+register_nav_menus( array(
+    'menu-1' => esc_html__( 'Primary', 'emperika' ),
+) );

@@ -1,6 +1,8 @@
-jQuery(document).ready(function($) {
+'use strict';
 
-    const search = $('#serch');
+jQuery(document).ready(function ($) {
+
+    var search = $('#serch');
     search.click(function () {
 
         $('header input[type="submit"]').click();

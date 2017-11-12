@@ -216,8 +216,9 @@ if ( ! class_exists( 'Storefront' ) ) :
 
 
 			//emperika styles
-
-			wp_enqueue_style( 'emperika-styles', get_template_directory_uri() . '/layouts/stylesheet.css', '', $storefront_version );
+            wp_enqueue_style( 'emperika-bootstrap', get_template_directory_uri() . '/layouts/plugins/bootstrap.css', '', $storefront_version );
+            wp_enqueue_style( 'emperika-font-awesome',  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', '', $storefront_version );
+			wp_enqueue_style( 'emperika-styles', get_template_directory_uri() . '/layouts/stylesheet.css', '', rand() );
 
 			/**
 			 * Fonts
