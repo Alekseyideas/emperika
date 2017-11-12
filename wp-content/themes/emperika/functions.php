@@ -119,3 +119,11 @@ function front_phone(){
 register_nav_menus( array(
     'menu-1' => esc_html__( 'Primary', 'emperika' ),
 ) );
+
+
+
+function get_product_category_by_slug($cat_slug)
+{
+    $category = get_term_by('slug', $cat_slug, 'product_cat', 'ARRAY_A');
+    return $category['name'];
+}

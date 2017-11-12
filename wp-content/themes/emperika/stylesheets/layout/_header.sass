@@ -1,6 +1,7 @@
 .site-header
   padding: 0
   color: black
+  border: 0
   &__search
     margin-right: 30px
   &__phone
@@ -28,11 +29,32 @@
       padding: 0
   &__second
     margin-top: 15px
+    .col-md-7
+      position: inherit
     .main-logo
       width: 200px
       display: block
       img
         width: 100%
         height: auto
+    .menu-main
+      margin-top: 20px
+      &__item
+        margin: 0 40px
+        a
+          font-size: 20px
+          color: black
+          &:hover
+            color: $blue
+            text-decoration: none
+          &:focus
+            text-decoration: none
 
-
+      &__cats
+        margin-top: 20px
+        position: absolute
+        top: 100%
+        width: 100%
+        background: #fafafa
+        padding: 20px 0
+        left: 0

@@ -53,10 +53,52 @@
                     <a href="/" class="main-logo"><img src="<?php echo get_template_directory_uri()?>/images/main/logo.png" alt="logo"></a>
                 </div>
                 <div class="col-md-7">
-                    <?php wp_nav_menu(array(
-                        theme_location => 'menu-1',
-                        menu_class => 'flex list-none'
-                    ))?>
+
+                    <div class="menu-main">
+                            <div class="flex menu-main__item">
+                                <a href="#">Товары</a>
+                                <div class="menu-main__cats">
+                                    <div class="container">
+                                        <div class="col-md-3">
+                                            <a href="<?php echo esc_url( get_term_link( 'nagrevatelnyj-mat', 'product_cat' ) ); ?>"><?php echo get_product_category_by_slug('nagrevatelnyj-mat'); ?> </a>
+
+
+
+                                            <ul class="products">
+                                                <?php
+                                                $args = array(
+                                                    'post_type' => 'product',
+                                                    'product_cat' => 'nagrevatelnyj-mat'
+                                                );
+                                                $loop = new WP_Query( $args );
+                                                if ( $loop->have_posts() ) {
+                                                    while ( $loop->have_posts() ) : $loop->the_post();
+                                                        do_action( 'woocommerce_before_shop_loop_item' );
+                                                        do_action( 'woocommerce_shop_loop_item_title' );
+                                                    endwhile;
+                                                } else {
+                                                    echo __( 'No products found' );
+                                                }
+                                                wp_reset_postdata();
+                                                ?>
+                                            </ul><!--/.products-->
+
+
+
+
+
+                                          <!--  --><?php /*echo do_shortcode('[product_category category="nagrevatelnyj-mat" per_page="12"]')*/?>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </div>
+                            </div>
+                        
+                    </div>
                 </div>
                 <div class="col-md-2"></div>
             </div>
