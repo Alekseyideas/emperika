@@ -6,3 +6,59 @@
 
 2017-11-12T19:20:18+00:00 CRITICAL Call to undefined function product_categories()
 
+2017-11-13T16:45:29+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_header_add_to_cart_fragment() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\header.php:154
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(688): require_once()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', true)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(45): locate_template(Array, true)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(15): get_header()
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-13T16:45:30+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_header_add_to_cart_fragment() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\header.php:154
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(688): require_once()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', true)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(45): locate_template(Array, true)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\404.php(8): get_header()
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-13T16:52:00+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\header.php:156
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(688): require_once()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', true)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(45): locate_template(Array, true)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(15): get_header()
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-13T16:52:01+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_url() on null in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\header.php:156
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(688): require_once()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', true)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(45): locate_template(Array, true)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\404.php(8): get_header()
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-14T19:21:18+00:00 CRITICAL Uncaught Error: Call to undefined function pll_e() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php:38
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include()
+#1 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#3 {main}
+  thrown
+

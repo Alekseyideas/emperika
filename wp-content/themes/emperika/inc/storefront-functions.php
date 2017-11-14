@@ -312,3 +312,4 @@ function storefront_categorized_blog() {
 		return false;
 	}
 }
+

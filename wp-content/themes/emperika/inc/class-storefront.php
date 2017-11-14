@@ -217,6 +217,7 @@ if ( ! class_exists( 'Storefront' ) ) :
 
 			//emperika styles
             wp_enqueue_style( 'emperika-bootstrap', get_template_directory_uri() . '/layouts/plugins/bootstrap.css', '', $storefront_version );
+            wp_enqueue_style( 'emperika-styles-carousel',  'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css', '', $storefront_version );
             wp_enqueue_style( 'emperika-font-awesome',  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', '', $storefront_version );
 			wp_enqueue_style( 'emperika-styles', get_template_directory_uri() . '/layouts/stylesheet.css', '', rand() );
 
@@ -261,6 +262,7 @@ if ( ! class_exists( 'Storefront' ) ) :
 
 
 			//emperika scripts
+			wp_enqueue_script( 'emperika-scripts-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js', array( 'jquery' ), rand(), true );
 			wp_enqueue_script( 'emperika-scripts', get_template_directory_uri() . '/es6/main.js', array( 'jquery' ), rand(), true );
 		}
 

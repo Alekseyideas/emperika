@@ -38,25 +38,83 @@
         width: 100%;
         height: auto; }
     .site-header__second .menu-main {
-      margin-top: 20px; }
+      margin-top: 30px; }
       .site-header__second .menu-main__item {
-        margin: 0 40px; }
-        .site-header__second .menu-main__item a {
+        margin: 0 40px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid white;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s; }
+        .site-header__second .menu-main__item > a {
           font-size: 20px;
-          color: black; }
-          .site-header__second .menu-main__item a:hover {
+          color: black;
+          font-weight: 500; }
+          .site-header__second .menu-main__item > a:hover {
             color: #007eff;
             text-decoration: none; }
-          .site-header__second .menu-main__item a:focus {
+          .site-header__second .menu-main__item > a:focus {
             text-decoration: none; }
+        .site-header__second .menu-main__item:hover {
+          border-bottom: 2px solid #007eff; }
+          .site-header__second .menu-main__item:hover > div {
+            display: block; }
       .site-header__second .menu-main__cats {
-        margin-top: 20px;
         position: absolute;
         top: 100%;
         width: 100%;
         background: #fafafa;
-        padding: 20px 0;
-        left: 0; }
+        padding: 10px 0 20px;
+        left: 0;
+        display: none; }
+      .site-header__second .menu-main__catTitle {
+        font-size: 18px;
+        color: #007eff;
+        margin: 10px 0;
+        display: block; }
+        .site-header__second .menu-main__catTitle:hover {
+          color: #0065cc; }
+      .site-header__second .menu-main__productNames a h2 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 600;
+        color: black; }
+  .site-header__mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f3fefd;
+    padding: 10px 0; }
+    .site-header__mobileSearchBtn {
+      background: none;
+      outline: 0; }
+      .site-header__mobileSearchBtn img {
+        width: 19px;
+        height: 20px; }
+      .site-header__mobileSearchBtn:hover, .site-header__mobileSearchBtn:focus, .site-header__mobileSearchBtn:active {
+        background: none; }
+    .site-header__mobileLogo {
+      width: 100px;
+      height: auto; }
+    .site-header__mobile .toggleBtnM {
+      background: none; }
+      .site-header__mobile .toggleBtnM svg {
+        width: 30px;
+        height: 22px; }
+      .site-header__mobile .toggleBtnM path {
+        fill: #007eff; }
+
+@media screen and (max-width: 1200px) {
+  .site-header__second .menu-main__item {
+    margin: 0 20px; }
+  .site-header .m-phone {
+    font-size: 20px;
+    margin-top: 30px;
+    display: block;
+    color: black; }
+    .site-header .m-phone i {
+      margin-right: 10px; } }
 
 body {
   margin: 0;
@@ -129,3 +187,65 @@ img {
     outline: 0;
     background: none;
     border: 0; }
+
+.relative {
+  position: relative; }
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none; } }
+
+.cartTop__img {
+  width: 45px;
+  height: 38px;
+  margin-right: 25px; }
+  .cartTop__img img {
+    display: block;
+    width: 100%; }
+  .cartTop__img .count {
+    position: absolute;
+    top: 0;
+    background: #f7ca18;
+    margin-top: -7px;
+    color: white;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    left: 100%;
+    margin-left: -10px; }
+
+.cartTop .amount {
+  font-size: 16px;
+  font-weight: bold; }
+
+.cartTop a {
+  font-size: 14px;
+  text-decoration: underline;
+  color: #0645ae; }
+  .cartTop a:hover {
+    color: #2372f7; }
+
+@media screen and (max-width: 768px) {
+  .cartTop > div {
+    display: none; }
+  .cartTop__img {
+    height: 25px;
+    width: 30px; }
+    .cartTop__img img {
+      width: 100%;
+      height: auto; }
+    .cartTop__img .count {
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      margin-left: -5px; } }
+
+.mainSlider__item {
+  -webkit-background-size: cover;
+          background-size: cover;
+  background: no-repeat center / cover;
+  height: 400px;
+  color: white; }

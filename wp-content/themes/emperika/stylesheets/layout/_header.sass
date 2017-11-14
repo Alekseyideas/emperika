@@ -38,23 +38,82 @@
         width: 100%
         height: auto
     .menu-main
-      margin-top: 20px
+      margin-top: 30px
       &__item
         margin: 0 40px
-        a
+        padding-bottom: 30px
+        border-bottom: 2px solid white
+        transition: .2s
+        &>a
           font-size: 20px
           color: black
+          font-weight: 500
           &:hover
             color: $blue
             text-decoration: none
           &:focus
             text-decoration: none
-
+        &:hover
+          border-bottom: 2px solid $blue
+          &>div
+            display: block
       &__cats
-        margin-top: 20px
         position: absolute
         top: 100%
         width: 100%
         background: #fafafa
-        padding: 20px 0
+        padding: 10px 0 20px
         left: 0
+        display: none
+      &__catTitle
+        font-size: 18px
+        color: $blue
+        margin: 10px 0
+        display: block
+        &:hover
+          color: darken($blue,10)
+      &__productNames
+        a
+          h2
+            margin: 0
+            font-size: 14px
+            font-weight: 600
+            color: black
+  &__mobile
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background: #f3fefd
+    padding: 10px 0
+    &SearchBtn
+      background: none
+      outline: 0
+      img
+        width: 19px
+        height: 20px
+      &:hover,&:focus,&:active
+        background: none
+    &Logo
+      width: 100px
+      height: auto
+    .toggleBtnM
+      background: none
+      svg
+        width: 30px
+        height: 22px
+      path
+        fill: #007eff
+@media screen and (max-width: 1200px)
+  .site-header
+    &__second
+      .menu-main
+        &__item
+          margin: 0 20px
+    .m-phone
+      font-size: 20px
+      margin-top: 30px
+      display: block
+      color: black
+      i
+        margin-right: 10px

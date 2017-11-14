@@ -57,7 +57,7 @@
 .ticker-title  span{
 	 color:#000 !important; 
 	 border-bottom:4px solid #d4054f;
-	 line-height:auto;
+	 line-height: inherit;
 	 padding-bottom:5px;
 	 font-size:13px; 
 	 font-weight:normal;
@@ -384,7 +384,7 @@ span.onsale:after, .woocommerce ul.products li.product .onsale:after, .woocommer
  }
  .widget_accesspress_store_product2 .feature-cat-product .slick-next{
      //background: url("images/mini-next-arrow.png") no-repeat scroll center center;
-     background-color:##d4054f;
+     background-color:#d4054f;
  }
  #accesspress_store_full_promo-3 .promo-image .caption{ 
  	 opacity: 1 !important; 
@@ -744,7 +744,7 @@ span.onsale:after, .woocommerce ul.products li.product .onsale:after, .woocommer
     background: #d4054f url("images/inactive.png") no-repeat scroll center center !important;
 }
 .gridlist-toggle a#list {
-    background: ##efefef url("images/inactive.png") no-repeat scroll center center !important;}
+    background: #efefef url("images/inactive.png") no-repeat scroll center center !important;}
 
 
 .woocommerce .content-area select {
@@ -1158,7 +1158,7 @@ form-author input, #respond .comment-form-email input, #respond input, #respond 
     text-align: left;
 }
 .woocommerce.single.single-product .related.products ul.products li a.add_to_cart_button,
-.woocommerce.single.single-product .upsells.products ul.products li a.add_to_cart_button ,
+.woocommerce.single.single-product .upsells.products ul.products li a.add_to_cart_button
 /* .woocommerce ul.products.grid li.product a */{
     line-height: 1;
     padding: 12px!important;

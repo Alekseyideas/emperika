@@ -1,0 +1,18 @@
+.cartTop__img {
+  width: 45px;
+  height: 38px; }
+  .cartTop__img img {
+    width: 100%; }
+  .cartTop__img .count {
+    position: absolute;
+    top: 0;
+    background: #f7ca18;
+    color: white;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    left: 100%;
+    margin-left: -10px; }

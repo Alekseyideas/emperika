@@ -127,3 +127,50 @@ function get_product_category_by_slug($cat_slug)
     $category = get_term_by('slug', $cat_slug, 'product_cat', 'ARRAY_A');
     return $category['name'];
 }
+
+
+
+function getProductCat($catName){
+		echo ' <a class="menu-main__catTitle" href="'.esc_url( get_term_link( $catName, 'product_cat' ) ) .'">'.get_product_category_by_slug($catName).'</a>';
+}
+
+function getProductName($catName){
+	$args = array(
+		'post_type' => 'product',
+		'product_cat' => $catName
+	);
+	$loop = new WP_Query( $args );
+	if ( $loop->have_posts() ) {
+		while ( $loop->have_posts() ) : $loop->the_post();
+			do_action( 'woocommerce_before_shop_loop_item' );
+			do_action( 'woocommerce_shop_loop_item_title' );
+		endwhile;
+	} else {
+		echo __( 'В данной категории нет продуктов' );
+	}
+	wp_reset_postdata();
+}
+
+add_filter( 'woocommerce_currencies', 'add_my_currency' );
+
+function add_my_currency( $currencies ) {
+
+	$currencies['UAH'] = __( 'Українська гривня', 'woocommerce' );
+
+	return $currencies;
+
+}
+
+add_filter('woocommerce_currency_symbol', 'add_my_currency_symbol', 10, 2);
+
+function add_my_currency_symbol( $currency_symbol, $currency ) {
+
+	switch( $currency ) {
+
+		case 'UAH': $currency_symbol = 'грн'; break;
+
+	}
+
+	return $currency_symbol;
+
+}

@@ -7,4 +7,8 @@ jQuery(document).ready(function ($) {
 
         $('header input[type="submit"]').click();
     });
+
+    $('.mainSlider').owlCarousel({
+        items: 1
+    });
 });

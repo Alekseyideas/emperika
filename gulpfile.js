@@ -29,7 +29,7 @@ gulp.task('min-css',function () {
 // Обновление страниц сайта на локальном сервере
 gulp.task('browser-sync', function() {
     browserSync({
-        port: 5005,
+        port: 5006,
         proxy: "emperika",
         notify: false
     });

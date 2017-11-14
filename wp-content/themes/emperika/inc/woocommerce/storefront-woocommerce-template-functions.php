@@ -51,7 +51,7 @@ if ( ! function_exists( 'storefront_cart_link_fragment' ) ) {
 
 		ob_start();
 		storefront_cart_link();
-		$fragments['a.cart-contents'] = ob_get_clean();
+		$fragments['div.cart-contents'] = ob_get_clean();
 
 		ob_start();
 		storefront_handheld_footer_bar_cart_link();
@@ -71,9 +71,27 @@ if ( ! function_exists( 'storefront_cart_link' ) ) {
 	 */
 	function storefront_cart_link() {
 		?>
-			<a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'storefront' ); ?>">
-				<span class="amount"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span> <span class="count"><?php echo wp_kses_data( sprintf( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'storefront' ), WC()->cart->get_cart_contents_count() ) );?></span>
-			</a>
+
+
+            <div class="cart-contents cartTop flex flex--a-center"  title="<?php esc_attr_e( 'View your shopping cart', 'storefront' ); ?>">
+                <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="relative cartTop__img">
+                <img src="<?php echo get_template_directory_uri()?>/images/main/cart.svg" alt="cart">
+                    <span class="count"><?php echo wp_kses_data( sprintf( _n( '%d ', '%d ', WC()->cart->get_cart_contents_count(), 'storefront' ), WC()->cart->get_cart_contents_count() ) );?></span>
+                </a>
+
+                <div>
+                    <span class="amount"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span>
+                    <br>
+                    <a href="<?php echo get_page_link('7')?>">Моя корзина</a>
+                    <br>
+                    <a href="<?php echo get_page_link('8')?>">Оформить</a>
+                </div>
+
+
+            </div>
+
+
+
 		<?php
 	}
 }
