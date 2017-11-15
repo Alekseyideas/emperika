@@ -19,6 +19,7 @@ get_header(); ?>
 </section>
 <?php get_template_part( 'components/component', 'why' ); ?>
 <?php get_template_part( 'components/component', 'home-warm-floors' ); ?>
+<?php get_template_part( 'components/component', 'bestsellers' ); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

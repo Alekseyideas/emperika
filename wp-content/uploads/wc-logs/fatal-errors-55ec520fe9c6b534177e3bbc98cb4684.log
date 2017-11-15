@@ -62,3 +62,132 @@ Stack trace:
 #3 {main}
   thrown
 
+2017-11-15T23:10:58+00:00 CRITICAL Call to a member function get_price_html() on null
+
+2017-11-15T23:11:01+00:00 CRITICAL Call to a member function get_price_html() on null
+
+2017-11-15T23:11:19+00:00 CRITICAL Call to a member function get_price_html() on null
+
+2017-11-15T23:11:21+00:00 CRITICAL Call to a member function get_price_html() on null
+
+2017-11-15T23:11:59+00:00 CRITICAL Call to a member function get_price_html() on null
+
+2017-11-15T23:12:01+00:00 CRITICAL Call to a member function get_price_html() on null
+
+2017-11-15T23:43:43+00:00 CRITICAL Uncaught exception 'WC_Data_Exception' with message 'Неверный адрес эл. почты для выставления счета' in D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:745
+Stack trace:
+#0 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\class-wc-order.php(1003): WC_Data->error('order_invalid_b...', '\xD0\x9D\xD0\xB5\xD0\xB2\xD0\xB5\xD1\x80\xD0\xBD\xD1\x8B\xD0...')
+#1 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\legacy\abstract-wc-legacy-order.php(337): WC_Order->set_billing_email('\xD0\x9D\xD0\xB5 \xD1\x83\xD0\xBA\xD0\xB0\xD0\xB7\xD0\xB0...')
+#2 D:\OSPanel\domains\emperika\wp-content\plugins\buy-one-click-woocommerce\inc\javascript-class.php(94): WC_Abstract_Legacy_Order->set_address(Array, 'billing')
+#3 [internal function]: BuyJavaScript->ajaxBuyButtonForm('')
+#4 D:\OSPanel\domains\emperika\wp-includes\class-wp-hook.php(298): call_user_func_array(Array, Array)
+#5 D:\OSPanel\domains\emperika\wp-
+
+2017-11-15T23:44:51+00:00 CRITICAL Uncaught exception 'WC_Data_Exception' with message 'Неверный адрес эл. почты для выставления счета' in D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:745
+Stack trace:
+#0 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\class-wc-order.php(1003): WC_Data->error('order_invalid_b...', '\xD0\x9D\xD0\xB5\xD0\xB2\xD0\xB5\xD1\x80\xD0\xBD\xD1\x8B\xD0...')
+#1 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\legacy\abstract-wc-legacy-order.php(337): WC_Order->set_billing_email('\xD0\x9D\xD0\xB5 \xD1\x83\xD0\xBA\xD0\xB0\xD0\xB7\xD0\xB0...')
+#2 D:\OSPanel\domains\emperika\wp-content\plugins\buy-one-click-woocommerce\inc\javascript-class.php(94): WC_Abstract_Legacy_Order->set_address(Array, 'billing')
+#3 [internal function]: BuyJavaScript->ajaxBuyButtonForm('')
+#4 D:\OSPanel\domains\emperika\wp-includes\class-wp-hook.php(298): call_user_func_array(Array, Array)
+#5 D:\OSPanel\domains\emperika\wp-
+
+2017-11-15T23:49:56+00:00 CRITICAL Uncaught exception 'WC_Data_Exception' with message 'Неверный адрес эл. почты для выставления счета' in D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:745
+Stack trace:
+#0 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\class-wc-order.php(1003): WC_Data->error('order_invalid_b...', '\xD0\x9D\xD0\xB5\xD0\xB2\xD0\xB5\xD1\x80\xD0\xBD\xD1\x8B\xD0...')
+#1 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\legacy\abstract-wc-legacy-order.php(337): WC_Order->set_billing_email('\xD0\x9D\xD0\xB5 \xD1\x83\xD0\xBA\xD0\xB0\xD0\xB7\xD0\xB0...')
+#2 D:\OSPanel\domains\emperika\wp-content\plugins\buy-one-click-woocommerce\inc\javascript-class.php(94): WC_Abstract_Legacy_Order->set_address(Array, 'billing')
+#3 [internal function]: BuyJavaScript->ajaxBuyButtonForm('')
+#4 D:\OSPanel\domains\emperika\wp-includes\class-wp-hook.php(298): call_user_func_array(Array, Array)
+#5 D:\OSPanel\domains\emperika\wp-
+
+2017-11-15T23:51:49+00:00 CRITICAL Uncaught exception 'WC_Data_Exception' with message 'Неверный адрес эл. почты для выставления счета' in D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:745
+Stack trace:
+#0 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\class-wc-order.php(1003): WC_Data->error('order_invalid_b...', '\xD0\x9D\xD0\xB5\xD0\xB2\xD0\xB5\xD1\x80\xD0\xBD\xD1\x8B\xD0...')
+#1 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\legacy\abstract-wc-legacy-order.php(337): WC_Order->set_billing_email('\xD0\x9D\xD0\xB5 \xD1\x83\xD0\xBA\xD0\xB0\xD0\xB7\xD0\xB0...')
+#2 D:\OSPanel\domains\emperika\wp-content\plugins\buy-one-click-woocommerce\inc\javascript-class.php(94): WC_Abstract_Legacy_Order->set_address(Array, 'billing')
+#3 [internal function]: BuyJavaScript->ajaxBuyButtonForm('')
+#4 D:\OSPanel\domains\emperika\wp-includes\class-wp-hook.php(298): call_user_func_array(Array, Array)
+#5 D:\OSPanel\domains\emperika\wp-
+
+2017-11-15T23:51:53+00:00 CRITICAL Uncaught exception 'WC_Data_Exception' with message 'Неверный адрес эл. почты для выставления счета' in D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:745
+Stack trace:
+#0 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\class-wc-order.php(1003): WC_Data->error('order_invalid_b...', '\xD0\x9D\xD0\xB5\xD0\xB2\xD0\xB5\xD1\x80\xD0\xBD\xD1\x8B\xD0...')
+#1 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\legacy\abstract-wc-legacy-order.php(337): WC_Order->set_billing_email('\xD0\x9D\xD0\xB5 \xD1\x83\xD0\xBA\xD0\xB0\xD0\xB7\xD0\xB0...')
+#2 D:\OSPanel\domains\emperika\wp-content\plugins\buy-one-click-woocommerce\inc\javascript-class.php(94): WC_Abstract_Legacy_Order->set_address(Array, 'billing')
+#3 [internal function]: BuyJavaScript->ajaxBuyButtonForm('')
+#4 D:\OSPanel\domains\emperika\wp-includes\class-wp-hook.php(298): call_user_func_array(Array, Array)
+#5 D:\OSPanel\domains\emperika\wp-
+
+2017-11-15T23:51:55+00:00 CRITICAL Uncaught exception 'WC_Data_Exception' with message 'Неверный адрес эл. почты для выставления счета' in D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:745
+Stack trace:
+#0 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\class-wc-order.php(1003): WC_Data->error('order_invalid_b...', '\xD0\x9D\xD0\xB5\xD0\xB2\xD0\xB5\xD1\x80\xD0\xBD\xD1\x8B\xD0...')
+#1 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\legacy\abstract-wc-legacy-order.php(337): WC_Order->set_billing_email('\xD0\x9D\xD0\xB5 \xD1\x83\xD0\xBA\xD0\xB0\xD0\xB7\xD0\xB0...')
+#2 D:\OSPanel\domains\emperika\wp-content\plugins\buy-one-click-woocommerce\inc\javascript-class.php(94): WC_Abstract_Legacy_Order->set_address(Array, 'billing')
+#3 [internal function]: BuyJavaScript->ajaxBuyButtonForm('')
+#4 D:\OSPanel\domains\emperika\wp-includes\class-wp-hook.php(298): call_user_func_array(Array, Array)
+#5 D:\OSPanel\domains\emperika\wp-
+
+2017-11-15T23:51:57+00:00 CRITICAL Uncaught exception 'WC_Data_Exception' with message 'Неверный адрес эл. почты для выставления счета' in D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:745
+Stack trace:
+#0 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\class-wc-order.php(1003): WC_Data->error('order_invalid_b...', '\xD0\x9D\xD0\xB5\xD0\xB2\xD0\xB5\xD1\x80\xD0\xBD\xD1\x8B\xD0...')
+#1 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\legacy\abstract-wc-legacy-order.php(337): WC_Order->set_billing_email('\xD0\x9D\xD0\xB5 \xD1\x83\xD0\xBA\xD0\xB0\xD0\xB7\xD0\xB0...')
+#2 D:\OSPanel\domains\emperika\wp-content\plugins\buy-one-click-woocommerce\inc\javascript-class.php(94): WC_Abstract_Legacy_Order->set_address(Array, 'billing')
+#3 [internal function]: BuyJavaScript->ajaxBuyButtonForm('')
+#4 D:\OSPanel\domains\emperika\wp-includes\class-wp-hook.php(298): call_user_func_array(Array, Array)
+#5 D:\OSPanel\domains\emperika\wp-
+
+2017-11-15T23:51:59+00:00 CRITICAL Uncaught exception 'WC_Data_Exception' with message 'Неверный адрес эл. почты для выставления счета' in D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:745
+Stack trace:
+#0 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\class-wc-order.php(1003): WC_Data->error('order_invalid_b...', '\xD0\x9D\xD0\xB5\xD0\xB2\xD0\xB5\xD1\x80\xD0\xBD\xD1\x8B\xD0...')
+#1 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\legacy\abstract-wc-legacy-order.php(337): WC_Order->set_billing_email('\xD0\x9D\xD0\xB5 \xD1\x83\xD0\xBA\xD0\xB0\xD0\xB7\xD0\xB0...')
+#2 D:\OSPanel\domains\emperika\wp-content\plugins\buy-one-click-woocommerce\inc\javascript-class.php(94): WC_Abstract_Legacy_Order->set_address(Array, 'billing')
+#3 [internal function]: BuyJavaScript->ajaxBuyButtonForm('')
+#4 D:\OSPanel\domains\emperika\wp-includes\class-wp-hook.php(298): call_user_func_array(Array, Array)
+#5 D:\OSPanel\domains\emperika\wp-
+
+2017-11-15T23:52:01+00:00 CRITICAL Uncaught exception 'WC_Data_Exception' with message 'Неверный адрес эл. почты для выставления счета' in D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:745
+Stack trace:
+#0 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\class-wc-order.php(1003): WC_Data->error('order_invalid_b...', '\xD0\x9D\xD0\xB5\xD0\xB2\xD0\xB5\xD1\x80\xD0\xBD\xD1\x8B\xD0...')
+#1 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\legacy\abstract-wc-legacy-order.php(337): WC_Order->set_billing_email('\xD0\x9D\xD0\xB5 \xD1\x83\xD0\xBA\xD0\xB0\xD0\xB7\xD0\xB0...')
+#2 D:\OSPanel\domains\emperika\wp-content\plugins\buy-one-click-woocommerce\inc\javascript-class.php(94): WC_Abstract_Legacy_Order->set_address(Array, 'billing')
+#3 [internal function]: BuyJavaScript->ajaxBuyButtonForm('')
+#4 D:\OSPanel\domains\emperika\wp-includes\class-wp-hook.php(298): call_user_func_array(Array, Array)
+#5 D:\OSPanel\domains\emperika\wp-
+
+2017-11-15T23:57:33+00:00 CRITICAL Uncaught exception 'WC_Data_Exception' with message 'Неверный адрес эл. почты для выставления счета' in D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:745
+Stack trace:
+#0 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\class-wc-order.php(1003): WC_Data->error('order_invalid_b...', '\xD0\x9D\xD0\xB5\xD0\xB2\xD0\xB5\xD1\x80\xD0\xBD\xD1\x8B\xD0...')
+#1 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\legacy\abstract-wc-legacy-order.php(337): WC_Order->set_billing_email('\xD0\x9D\xD0\xB5 \xD1\x83\xD0\xBA\xD0\xB0\xD0\xB7\xD0\xB0...')
+#2 D:\OSPanel\domains\emperika\wp-content\plugins\buy-one-click-woocommerce\inc\javascript-class.php(94): WC_Abstract_Legacy_Order->set_address(Array, 'billing')
+#3 [internal function]: BuyJavaScript->ajaxBuyButtonForm('')
+#4 D:\OSPanel\domains\emperika\wp-includes\class-wp-hook.php(298): call_user_func_array(Array, Array)
+#5 D:\OSPanel\domains\emperika\wp-
+
+2017-11-15T23:57:35+00:00 CRITICAL Uncaught exception 'WC_Data_Exception' with message 'Неверный адрес эл. почты для выставления счета' in D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:745
+Stack trace:
+#0 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\class-wc-order.php(1003): WC_Data->error('order_invalid_b...', '\xD0\x9D\xD0\xB5\xD0\xB2\xD0\xB5\xD1\x80\xD0\xBD\xD1\x8B\xD0...')
+#1 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\legacy\abstract-wc-legacy-order.php(337): WC_Order->set_billing_email('\xD0\x9D\xD0\xB5 \xD1\x83\xD0\xBA\xD0\xB0\xD0\xB7\xD0\xB0...')
+#2 D:\OSPanel\domains\emperika\wp-content\plugins\buy-one-click-woocommerce\inc\javascript-class.php(94): WC_Abstract_Legacy_Order->set_address(Array, 'billing')
+#3 [internal function]: BuyJavaScript->ajaxBuyButtonForm('')
+#4 D:\OSPanel\domains\emperika\wp-includes\class-wp-hook.php(298): call_user_func_array(Array, Array)
+#5 D:\OSPanel\domains\emperika\wp-
+
+2017-11-15T23:58:06+00:00 CRITICAL Uncaught exception 'WC_Data_Exception' with message 'Неверный адрес эл. почты для выставления счета' in D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:745
+Stack trace:
+#0 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\class-wc-order.php(1003): WC_Data->error('order_invalid_b...', '\xD0\x9D\xD0\xB5\xD0\xB2\xD0\xB5\xD1\x80\xD0\xBD\xD1\x8B\xD0...')
+#1 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\legacy\abstract-wc-legacy-order.php(337): WC_Order->set_billing_email('\xD0\x9D\xD0\xB5 \xD1\x83\xD0\xBA\xD0\xB0\xD0\xB7\xD0\xB0...')
+#2 D:\OSPanel\domains\emperika\wp-content\plugins\buy-one-click-woocommerce\inc\javascript-class.php(94): WC_Abstract_Legacy_Order->set_address(Array, 'billing')
+#3 [internal function]: BuyJavaScript->ajaxBuyButtonForm('')
+#4 D:\OSPanel\domains\emperika\wp-includes\class-wp-hook.php(298): call_user_func_array(Array, Array)
+#5 D:\OSPanel\domains\emperika\wp-
+
+2017-11-16T00:01:00+00:00 CRITICAL Uncaught exception 'WC_Data_Exception' with message 'Неверный адрес эл. почты для выставления счета' in D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:745
+Stack trace:
+#0 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\class-wc-order.php(1003): WC_Data->error('order_invalid_b...', '\xD0\x9D\xD0\xB5\xD0\xB2\xD0\xB5\xD1\x80\xD0\xBD\xD1\x8B\xD0...')
+#1 D:\OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\legacy\abstract-wc-legacy-order.php(337): WC_Order->set_billing_email('\xD0\x9D\xD0\xB5 \xD1\x83\xD0\xBA\xD0\xB0\xD0\xB7\xD0\xB0...')
+#2 D:\OSPanel\domains\emperika\wp-content\plugins\buy-one-click-woocommerce\inc\javascript-class.php(94): WC_Abstract_Legacy_Order->set_address(Array, 'billing')
+#3 [internal function]: BuyJavaScript->ajaxBuyButtonForm('')
+#4 D:\OSPanel\domains\emperika\wp-includes\class-wp-hook.php(298): call_user_func_array(Array, Array)
+#5 D:\OSPanel\domains\emperika\wp-
+

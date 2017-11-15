@@ -43,7 +43,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<?php WC_Admin_Addons::output_wcs_banner_block(); ?>
 				</div>
 			<?php endif; ?>
-			<ul class="products">
+			<ul class="products ">
 			<?php foreach ( $addons as $addon ) : ?>
 				<?php if ( 'shipping_methods' === $current_section ) {
 					// Do not show USPS or Canada Post extensions for US and CA stores, respectively.
