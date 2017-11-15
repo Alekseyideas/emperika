@@ -4,6 +4,23 @@
     background: no-repeat center / cover
     height: 400px
     color: white
+  &__title
+    font-size: 46px
+    &:after
+      content: ''
+      display: block
+      width: 60px
+      height: 2px
+      background: white
+      margin: 20px auto
+  &__text
+    font-size: 22px
+    max-width: 620px
+    margin: auto
 
 
 
+@media screen and (min-width: 1600px)
+  .mainSlider
+    &__item
+      height: 500px
