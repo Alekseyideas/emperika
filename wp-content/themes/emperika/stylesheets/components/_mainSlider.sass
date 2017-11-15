@@ -19,7 +19,53 @@
     margin: auto
 
 
+  .owl-dots
+    position: absolute
+    width: 100%
+    bottom: 10px
+    left: 0
+    text-align: center
+    .owl-dot
+      display: inline-block
+      opacity: .3
+      span
+        display: block
+        width: 15px
+        height: 15px
+        background: white
+        border-radius: 50%
+        margin: 0 3px
+      &:hover,
+      &.active
+        opacity: .8
 
+
+  .owl-nav
+    position: absolute
+    top: 45%
+    color: white
+    width: 100%
+    display: flex
+    justify-content: space-between
+    padding: 0 50px
+    font-size: 50px
+    div
+      opacity: .3
+      &:hover
+        opacity: .8
+      &.disabled
+        opacity: 0
+  &__btn
+    color: white
+    border: 1px solid white
+    margin: 20px 0
+    padding:
+      left: 30px
+      right: 30px
+    &:hover
+      border: 1px solid white
+      color: white
+      opacity: .5
 @media screen and (min-width: 1600px)
   .mainSlider
     &__item

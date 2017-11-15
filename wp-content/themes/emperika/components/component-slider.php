@@ -10,6 +10,10 @@ while ( $loop->have_posts() ) : $loop->the_post();
 			<div class="container text-center">
 				<h1 class="mainSlider__title"><?php the_title()?></h1>
 				<h3 class="mainSlider__text"><?php the_content()?></h3>
+                <?php
+                    $link = get_field('slider_link');
+               ?>
+                <a class="btn mainSlider__btn" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
 			</div>
 
 

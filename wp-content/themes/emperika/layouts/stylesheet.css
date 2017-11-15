@@ -191,6 +191,14 @@ img {
 .relative {
   position: relative; }
 
+.section__title {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0; }
+  .section__title--blue {
+    color: #007eff; }
+
 @media screen and (min-width: 768px) {
   .mobile {
     display: none; } }
@@ -265,6 +273,105 @@ img {
   max-width: 620px;
   margin: auto; }
 
+.mainSlider .owl-dots {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  left: 0;
+  text-align: center; }
+  .mainSlider .owl-dots .owl-dot {
+    display: inline-block;
+    opacity: .3; }
+    .mainSlider .owl-dots .owl-dot span {
+      display: block;
+      width: 15px;
+      height: 15px;
+      background: white;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      margin: 0 3px; }
+    .mainSlider .owl-dots .owl-dot:hover, .mainSlider .owl-dots .owl-dot.active {
+      opacity: .8; }
+
+.mainSlider .owl-nav {
+  position: absolute;
+  top: 45%;
+  color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50px;
+  font-size: 50px; }
+  .mainSlider .owl-nav div {
+    opacity: .3; }
+    .mainSlider .owl-nav div:hover {
+      opacity: .8; }
+    .mainSlider .owl-nav div.disabled {
+      opacity: 0; }
+
+.mainSlider__btn {
+  color: white;
+  border: 1px solid white;
+  margin: 20px 0;
+  padding-left: 30px;
+  padding-right: 30px; }
+  .mainSlider__btn:hover {
+    border: 1px solid white;
+    color: white;
+    opacity: .5; }
+
 @media screen and (min-width: 1600px) {
   .mainSlider__item {
     height: 500px; } }
+
+.why {
+  padding: 0px 0 20px; }
+  .why__wrapper:nth-child(1) img {
+    width: 39px;
+    height: 50px; }
+  .why__wrapper:nth-child(2) img {
+    width: 40px;
+    height: 40px; }
+  .why__wrapper:nth-child(3) img {
+    width: 46px;
+    height: 29px; }
+  .why__wrapper:nth-child(4) img {
+    width: 39px;
+    height: 50px; }
+  .why__wrapper p {
+    margin: 0 0 0 10px;
+    font-size: 18px; }
+
+.home-warm-floors {
+  background: #ecfdfc;
+  padding-bottom: 30px; }
+  .home-warm-floors__wrapper {
+    text-decoration: none; }
+    .home-warm-floors__wrapper:hover {
+      text-decoration: none; }
+      .home-warm-floors__wrapper:hover .home-warm-floors__title {
+        text-decoration: none;
+        background: #3398ff; }
+    .home-warm-floors__wrapper:focus {
+      text-decoration: none; }
+  .home-warm-floors__img {
+    width: 100%; }
+    .home-warm-floors__img img {
+      width: 100%; }
+  .home-warm-floors__title {
+    background: #007eff;
+    color: white;
+    height: 70px;
+    font-size: 26px;
+    text-decoration: none;
+    text-align: center; }
+    .home-warm-floors__title span {
+      display: block;
+      text-align: center;
+      width: 100%; }
