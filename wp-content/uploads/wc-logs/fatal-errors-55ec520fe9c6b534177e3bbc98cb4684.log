@@ -191,3 +191,282 @@ Stack trace:
 #4 D:\OSPanel\domains\emperika\wp-includes\class-wp-hook.php(298): call_user_func_array(Array, Array)
 #5 D:\OSPanel\domains\emperika\wp-
 
+2017-11-16T12:29:07+00:00 CRITICAL Uncaught WC_Data_Exception: Неверный адрес эл. почты для выставления счета in D:\_OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-data.php:745
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\class-wc-order.php(1003): WC_Data->error('order_invalid_b...', '\xD0\x9D\xD0\xB5\xD0\xB2\xD0\xB5\xD1\x80\xD0\xBD\xD1\x8B\xD0...')
+#1 D:\_OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\legacy\abstract-wc-legacy-order.php(337): WC_Order->set_billing_email('\xD0\x9D\xD0\xB5 \xD1\x83\xD0\xBA\xD0\xB0\xD0\xB7\xD0\xB0...')
+#2 D:\_OSPanel\domains\emperika\wp-content\plugins\buy-one-click-woocommerce\inc\javascript-class.php(94): WC_Abstract_Legacy_Order->set_address(Array, 'billing')
+#3 D:\_OSPanel\domains\emperika\wp-includes\class-wp-hook.php(298): BuyJavaScript->ajaxBuyButtonForm('')
+#4 D:\_OSPanel\domains\emperika\wp-includes\class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#5 D:\_OSPan
+
+2017-11-16T12:54:39+00:00 CRITICAL Uncaught Error: Call to a member function get_categories() on null in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:33
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-16T13:07:40+00:00 CRITICAL Cannot redeclare get_product_category_by_id() (previously declared in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:28)
+
+2017-11-16T13:07:58+00:00 CRITICAL Cannot redeclare get_product_category_by_id() (previously declared in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:28)
+
+2017-11-16T13:08:14+00:00 CRITICAL Cannot redeclare get_product_category_by_id() (previously declared in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:28)
+
+2017-11-16T13:08:22+00:00 CRITICAL Cannot redeclare get_product_category_by_id() (previously declared in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:28)
+
+2017-11-16T13:08:25+00:00 CRITICAL Cannot redeclare get_product_category_by_id() (previously declared in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:28)
+
+2017-11-16T13:08:34+00:00 CRITICAL Cannot redeclare get_product_category_by_id() (previously declared in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:28)
+
+2017-11-16T13:08:39+00:00 CRITICAL Uncaught Error: Call to undefined function get_product_category_by_id() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:29
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-16T13:09:52+00:00 CRITICAL Uncaught Error: Call to undefined function get_product_category_by_id() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:28
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-16T13:24:25+00:00 CRITICAL Uncaught Error: Call to undefined function get_term_name() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:31
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-16T13:25:19+00:00 CRITICAL Uncaught Error: Function name must be a string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:31
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-16T16:41:54+00:00 CRITICAL Uncaught Error: Call to undefined function umber_format() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\functions.php:193
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php(26): Product(Object(WP_Query))
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#3 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#4 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#5 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#7 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#8 {main}
+  thrown
+
+2017-11-16T16:43:28+00:00 CRITICAL Uncaught Error: Call to undefined function umber_format() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\functions.php:193
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php(26): Product(Object(WP_Query))
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#3 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#4 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#5 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#7 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#8 {main}
+  thrown
+
+2017-11-16T16:44:22+00:00 CRITICAL Uncaught Error: Call to undefined function umber_format() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\functions.php:193
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php(26): Product(Object(WP_Query))
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#3 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#4 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#5 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#7 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#8 {main}
+  thrown
+
+2017-11-16T16:44:26+00:00 CRITICAL Uncaught Error: Call to undefined function umber_format() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\functions.php:193
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php(26): Product(Object(WP_Query))
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#3 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#4 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#5 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#7 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#8 {main}
+  thrown
+
+2017-11-16T16:44:51+00:00 CRITICAL Uncaught Error: Call to undefined function umber_format() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\functions.php:193
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php(26): Product(Object(WP_Query))
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#3 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#4 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#5 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#7 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#8 {main}
+  thrown
+
+2017-11-16T16:46:06+00:00 CRITICAL Uncaught Error: Call to undefined function get_title() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\functions.php:192
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php(26): Product(Object(WP_Query))
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#3 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#4 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#5 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#7 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#8 {main}
+  thrown
+
+2017-11-16T17:09:34+00:00 CRITICAL Out of memory (allocated 50331648) (tried to allocate 262144 bytes)
+
+2017-11-16T17:14:52+00:00 CRITICAL Uncaught Error: Call to undefined function GetLoopProduct() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:18
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-16T17:14:52+00:00 CRITICAL Uncaught Error: Call to undefined function GetLoopProduct() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:18
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-16T17:15:36+00:00 CRITICAL Uncaught Error: Call to undefined function GetLoopProduct() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:18
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-16T17:15:36+00:00 CRITICAL Uncaught Error: Call to undefined function GetLoopProduct() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:18
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-16T17:15:42+00:00 CRITICAL Uncaught Error: Call to undefined function GetLoopProduct() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:18
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-16T17:15:42+00:00 CRITICAL Uncaught Error: Call to undefined function GetLoopProduct() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:18
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-16T17:16:01+00:00 CRITICAL Uncaught Error: Call to undefined function GetLoopProduct() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:18
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-16T17:16:01+00:00 CRITICAL Uncaught Error: Call to undefined function GetLoopProduct() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:18
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(167): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-16T18:16:29+00:00 CRITICAL Out of memory (allocated 20971520) (tried to allocate 114688 bytes)
+
+2017-11-16T18:18:23+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 32768 bytes)
+
+2017-11-16T18:28:30+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 32768 bytes)
+
+2017-11-16T18:33:28+00:00 CRITICAL Out of memory (allocated 14680064) (tried to allocate 28672 bytes)
+
+2017-11-16T18:35:28+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 8192 bytes)
+
+2017-11-16T19:29:18+00:00 CRITICAL Uncaught Error: Call to undefined function GetLoopProduct() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php:16
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+

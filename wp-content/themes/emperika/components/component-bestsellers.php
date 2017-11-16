@@ -11,34 +11,15 @@ $sale = get_post_meta( get_the_ID(), '_sale_price', true);
        <!-- --><?php /*echo do_shortcode('[products limit="2" columns="4" orderby="popularity" class="quick-sale" best_selling="true"]')*/?>
 
     <div class="row">
-	    <?php
+        <div class="mobile">
+	        <?php
+	        GetLoopProduct (8,'total_sales');
+	        // Setup your custom query
+	        ?>
 
-	    // Setup your custom query
-	    $args = array(
-		    'post_type' => 'product',
-		    'posts_per_page' => 8,
-		    'meta_key' => 'total_sales',
-		    'orderby' => 'meta_value_num' );
-	    $loop = new WP_Query( $args );
-
-	    while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
-            <div class="col-md-3">
-                <a href="<?php echo get_permalink( $loop->post->ID ) ?>">
-		            <?php the_title(); ?>
-                    <br>
-                    <?php echo number_format(get_post_meta( get_the_ID(), '_regular_price', true),'0', '  ',' ')?> грн
-
-                    <br>
-	                <?php woocommerce_template_loop_add_to_cart(); //ouptput the woocommerce loop add to cart button ?>
-
-                    <?php echo do_shortcode('[viewBuyButton]')?>
-                </a>
-            </div>
-
-
-	    <?php endwhile; wp_reset_query(); // Remember to reset ?>
-
+        </div>
+        <div class="tablet"></div>
+        <div class="desktop"></div>
     </div>
 
 

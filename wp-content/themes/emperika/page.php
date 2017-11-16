@@ -28,10 +28,10 @@ get_header(); ?>
 				 */
 				do_action( 'storefront_page_after' );
 
-			endwhile; // End of the loop. ?>
+			endwhile; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 <?php
 do_action( 'storefront_sidebar' );

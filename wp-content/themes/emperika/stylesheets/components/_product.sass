@@ -1,0 +1,76 @@
+.product
+  &__wrapper
+    display: block
+    border: 1px solid #f0f0f0
+    width: 100%
+    box-sizing: border-box
+    padding: 20px
+    text-align: center
+    position: relative
+    margin-bottom: 30px
+    .add_to_cart_button
+      display: block
+      margin: 10px 0
+      border: 1px solid $blue
+      background: none
+      border-radius: 3px
+      color: $blue
+      font-size: 18px
+      &:hover
+        background: $blue
+        color: white
+
+
+    .clickBuyButton
+      border: 0
+      background: none
+      font-size: 18px
+      text-decoration: underline
+      &:hover
+        &:not(:active)
+          box-shadow: none
+        box-shadow: none
+        border: 0
+        color: $blue
+      &:focus
+        background: none
+    .added_to_cart
+      position: absolute
+      top: 0
+      right: 0
+      font-size: 14px
+      font-weight: normal
+      &::after
+        content: ''
+        display: none
+
+  &__image
+      img
+        height: 170px
+        width: auto
+        margin: auto
+  &__cat
+    font-size: 18px
+    color: black
+    font-weight: bold
+  &__name
+    height: 55px
+    display: block
+    overflow: hidden
+    font-size: 16px
+    color: #858484
+    line-height: 18px
+  &__priceWrapper
+    height: 50px
+    overflow: hidden
+    span
+      text-align: center
+  &__oldPrice
+    font-size: 16px
+    color: #bfbdbd
+    text-decoration: line-through
+  &__price
+    font-size: 20px
+    font-weight: bold
+  &__currency
+    font-size: .8em

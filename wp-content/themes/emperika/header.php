@@ -6,7 +6,7 @@
  *
  * @package storefront
  */
-
+get_template_part( 'components/component', 'product' );
 ?><!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -144,16 +144,7 @@
                                                     <div class="menu-main__productNames">
 												        <?php getProductName($catName);?>
                                                     </div>
-											        <?php
-											        $catName = 'montazhnye-plastiny';
 
-											        getProductCat($catName)
-
-											        ?>
-
-                                                    <div class="menu-main__productNames">
-												        <?php getProductName($catName);?>
-                                                    </div>
                                                 </div>
                                                 <div class="col-md-3">
 											        <?php

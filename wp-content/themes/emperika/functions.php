@@ -174,3 +174,59 @@ function add_my_currency_symbol( $currency_symbol, $currency ) {
 	return $currency_symbol;
 
 }
+
+
+
+
+function Product($loop){
+	$term_list = wp_get_post_terms(get_the_ID(),'product_cat',array('fields'=>'ids'));
+	$cat_id = (int)$term_list[0];
+
+
+	$product_img = get_the_post_thumbnail_url();
+	$product_link = get_permalink( $loop->post->ID );
+	$product_title = get_the_title();
+	$product_content = get_the_content();
+	$product_price = number_format(get_post_meta( get_the_ID(), "_regular_price", true),"0", "  "," ");
+	$product_oldPrice = get_post_meta(get_the_ID(),"_sale_price",true );
+	$product_oldPrice = $product_oldPrice > 0 ? number_format(get_post_meta( get_the_ID(), "_sale_price", true),"0", "  "," ") : false;
+	$product__currency = '<span class="product__currency">&nbsp;грн</span>';
+	$product__oldCurrency =  $product_oldPrice > 0 ? $product__currency : false;;
+
+	$product_catName = get_term_field ('name',$cat_id, 'product_cat');
+	$product_catLink = get_term_link ($cat_id, 'product_cat');
+
+
+
+
+
+
+	echo '
+		  	<a href="'.$product_link.'" class="product__image">
+		 	 	<img src="'.$product_img.'" alt="product">
+			 </a> <br>
+			 <a href="'.$product_catLink.'" class="product__cat">
+			    '.$product_title.'
+			 </a>
+			 <br>
+			 <a href="'.$product_link.'" class="product__name">
+			 	<span>'. $product_content .'</span>
+			 	
+			</a>
+			<div class="product__priceWrapper flex flex--a-center flex--j-center">
+			<div>
+				<span class="product__oldPrice flex flex--j-center flex--a-bottom">'.$product_oldPrice .  $product__oldCurrency  .'</span>
+					<span class="product__price flex flex--j-center flex--a-bottom">'.$product_price. $product__currency .'</span>
+			</div>
+			</div>
+	';
+}
+
+
+
+function Emperika_filter_plugin_updates($value) {
+	unset($value->response['advanced-custom-fields-pro/acf.php']);
+
+	return $value;
+}
+add_filter('site_transient_update_plugins', 'Emperika_filter_plugin_updates');
