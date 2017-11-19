@@ -2,13 +2,14 @@
 
 
 
-function GetLoopProduct($count, $key, $postIn = 0){
+function GetLoopProduct($count, $key, $postIn = 0, $catName = ''){
 
 // Setup your custom query
 $args = array(
 	'post_type' => 'product',
 	'posts_per_page' => $count,
 	'meta_key' => $key,
+	'product_cat' => $catName,
 	'post__in'            => $postIn,
 	'orderby' => 'meta_value_num' );
 $loop = new WP_Query( $args );

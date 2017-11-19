@@ -166,30 +166,13 @@ get_header(); ?>
 <section>
 <div class="container">
 	<?php
-	//global array to reposition the elements to display as you want (e.g. kept 'title' before 'first_name' )
-	$wdm_address_fields = array('country',
-		'title', //new field
-		'first_name',
-		'last_name',
-		//'company',
-		'address_2',
-		'address_1',
-		'city',
-		'state',
-		'postcode');
-
-	//global array only for extra fields
-	$wdm_ext_fields = array('title',
-		'address_3',
-		'address_4');
-
 
 	echo do_shortcode('[woocommerce_checkout]')
 	?>
 </div>
 
 </section>
-
+<?php get_template_part( 'components/home/component', 'home-news' ); ?>
 
 
 <?php

@@ -102,9 +102,31 @@ img
 a
   &:hover
     text-decoration: none
+#place_order
+  background: $blue
+  color: white
+  &:hover
+    background: darken($blue,20)
+ul#shipping_method li
+  display: flex
+  input
+    width: 15px
+    height: 15px
+  label
+    cursor: pointer
+    width: 80%
+.woocommerce-info
+  display: none
 .address-field
   display: none
+.shipping
+  td
+    &:last-child
+      width: 250px
+.catTitle
+  margin-bottom: 30px
 @media screen and (min-width: 768px)
   .mobile
     display: none
+
 

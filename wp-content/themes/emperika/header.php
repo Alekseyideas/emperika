@@ -106,7 +106,7 @@ get_template_part( 'components/component', 'product' );
                             <div class="menu-main hidden-sm hidden-xs">
                                 <div class="flex">
                                     <div class="menu-main__item">
-                                        <a href="#">Товары</a>
+                                        <a href="<?php echo get_page_link(23)?>">Товары</a>
                                         <div class="menu-main__cats">
                                             <div class="container">
                                                 <div class="col-md-3">

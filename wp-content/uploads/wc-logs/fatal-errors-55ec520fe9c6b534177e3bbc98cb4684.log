@@ -932,3 +932,23 @@ Stack trace:
 #5 D:\_OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(242): wc_get_template('checkout/form-c...', Array)
 #6 D:\_OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-sho
 
+2017-11-19T15:56:20+00:00 CRITICAL Call to undefined function get_field()
+
+2017-11-19T15:56:53+00:00 CRITICAL Call to undefined function get_field()
+
+2017-11-19T18:56:55+00:00 CRITICAL Call to a member function managing_stock() on null
+
+2017-11-19T18:56:55+00:00 CRITICAL Call to a member function managing_stock() on null
+
+2017-11-19T18:59:38+00:00 CRITICAL Call to a member function get_queried_object() on null
+
+2017-11-19T18:59:39+00:00 CRITICAL Call to a member function get_queried_object() on null
+
+2017-11-19T18:59:50+00:00 CRITICAL Call to a member function get_queried_object() on null
+
+2017-11-19T18:59:50+00:00 CRITICAL Call to a member function get_queried_object() on null
+
+2017-11-19T19:00:05+00:00 CRITICAL Call to a member function get_queried_object() on null
+
+2017-11-19T19:00:06+00:00 CRITICAL Call to a member function get_queried_object() on null
+

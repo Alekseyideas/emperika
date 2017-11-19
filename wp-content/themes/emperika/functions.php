@@ -137,7 +137,12 @@ function get_product_category_by_slug($cat_slug)
 function getProductCat($catName){
 		echo ' <a class="menu-main__catTitle" href="'.esc_url( get_term_link( $catName, 'product_cat' ) ) .'">'.get_product_category_by_slug($catName).'</a>';
 }
-
+function getProductCatTitle($catName){
+	echo '<h1 class="catTitle">'.get_product_category_by_slug($catName).'</h1>';
+}
+function getProductCatLink($catName){
+	echo esc_url( get_term_link( $catName, 'product_cat' ));
+}
 function getProductName($catName){
 	$args = array(
 		'post_type' => 'product',
