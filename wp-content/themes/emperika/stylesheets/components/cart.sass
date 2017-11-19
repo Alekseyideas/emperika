@@ -1,0 +1,71 @@
+.cart
+  .product-remove
+    margin: auto
+  .remove
+    margin: auto
+    text-align: center
+    &:before
+      content: '\f00d'
+      font-family: 'FontAwesome'
+      color: #bdbdbd
+      text-align: center
+    &:hover
+      &:before
+        color: red
+  table
+    border: 1px solid #e7e6e6
+    th
+      background: none
+      border-bottom: 1px solid #e7e6e6
+    tbody
+      tr
+        td
+          background: white
+          border-bottom: 1px solid #e7e6e6 !important
+          &:first-child
+            padding: 10px 0
+          img
+            width: 5em
+          &.product-name
+            padding-left: 0
+        &:nth-child(2n)
+          td
+            background: white
+  .product-quantity
+    button,
+    input
+      background: none
+      border: 1px solid #e7e6e6
+      height: 30px
+      text-align: center
+      box-shadow: none
+    button
+      width: 30px
+      padding: 0
+  .actions
+    display: none
+  .product-name
+    a
+      font-weight: bold
+  &__totalText
+    font-size: 16px
+    margin: 0
+  &__totalPrice
+    font-weight: bold
+    font-size: 20px
+  .product-subtotal--last
+    padding-top: 1.4em
+  .table.cart td.product-remove
+    width: 4%
+    padding: 0 !important
+  .cart_item
+    .product-subtotal
+      width: 10%
+      padding-bottom: 0
+      font-size: 17px
+      padding-top: 1.5em
+
+  table.cart td.product-remove
+    padding-left: 0 !important
+    padding-right: 0 !important
+

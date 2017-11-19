@@ -470,3 +470,465 @@ Stack trace:
 #7 {main}
   thrown
 
+2017-11-17T10:54:43+00:00 CRITICAL Uncaught Error: Call to undefined function is_in_stock() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-product.php:18
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php(21): GetLoopProduct(8, 'total_sales')
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#3 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#5 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#7 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#
+
+2017-11-17T10:54:49+00:00 CRITICAL Uncaught Error: Call to undefined function is_in_stock() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-product.php:18
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php(21): GetLoopProduct(8, 'total_sales')
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#3 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#5 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#7 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#
+
+2017-11-17T10:58:25+00:00 CRITICAL Uncaught Error: Call to undefined function is_in_stock() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-product.php:18
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php(21): GetLoopProduct(8, 'total_sales')
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#3 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#5 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#7 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#
+
+2017-11-17T10:58:38+00:00 CRITICAL Uncaught Error: Call to undefined function is_in_stock() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-product.php:18
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php(21): GetLoopProduct(8, 'total_sales')
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#3 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#5 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#7 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#
+
+2017-11-17T10:58:39+00:00 CRITICAL Uncaught Error: Call to undefined function is_in_stock() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-product.php:18
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php(21): GetLoopProduct(8, 'total_sales')
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#3 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#5 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#7 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#
+
+2017-11-17T11:06:34+00:00 CRITICAL Uncaught Error: Call to undefined function is_in_stock() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-product.php:19
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php(21): GetLoopProduct(8, 'total_sales')
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#3 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#5 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#7 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#
+
+2017-11-17T11:07:39+00:00 CRITICAL Uncaught Error: Using $this when not in object context in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-product.php:21
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-product.php(27): is_in_stock()
+#1 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php(21): GetLoopProduct(8, 'total_sales')
+#2 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require('D:\\_OSPanel\\dom...')
+#3 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#4 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#5 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#6 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#7 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_
+
+2017-11-17T11:08:02+00:00 CRITICAL Uncaught Error: Call to undefined function get_stock_status() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-product.php:21
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php(21): GetLoopProduct(8, 'total_sales')
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#3 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#5 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#7 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom..
+
+2017-11-17T11:09:32+00:00 CRITICAL Cannot redeclare is_out_of_stock() (previously declared in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-product.php:21)
+
+2017-11-17T11:09:44+00:00 CRITICAL Cannot redeclare is_out_of_stock() (previously declared in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-product.php:21)
+
+2017-11-17T11:12:17+00:00 CRITICAL Cannot redeclare woocommerce_template_loop_stock() (previously declared in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-product.php:21)
+
+2017-11-17T14:25:51+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-home-news.php:12
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(26): get_template_part('components/comp...', 'home-news')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-17T14:59:07+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-slider.php:9
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(18): get_template_part('components/comp...', 'slider')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T14:30:45+00:00 CRITICAL Uncaught Error: Class 'wp_nav_menu' not found in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-site-map.php:13
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-site-map.php(6): GetFootMenu('\xD0\x9A\xD0\xBE\xD0\xBC\xD0\xBF\xD0\xB0\xD0\xBD\xD0\xB8\xD1...', 'Company')
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#3 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(28): get_template_part('components/comp...', 'site-map')
+#5 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#7 D:\_OSPanel\domains\emperika\index.ph
+
+2017-11-18T17:08:28+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:10:08+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on null in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-product.php:12
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-bestsellers.php(21): GetLoopProduct(8, 'total_sales')
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#3 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#4 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\template-homepage.php(22): get_template_part('components/comp...', 'bestsellers')
+#5 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#7 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom
+
+2017-11-18T17:10:10+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:10:38+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:13:48+00:00 CRITICAL Uncaught Error: Call to a member function managing_stock() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:38
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:13:54+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:14:15+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:19
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:14:35+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:15:26+00:00 CRITICAL Uncaught Error: Using $this when not in object context in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:15:31+00:00 CRITICAL Uncaught Error: Using $this when not in object context in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:15:39+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:15:43+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:16:53+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:16:57+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:17:06+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:17:07+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:19:11+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:19:15+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:19:29+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:19:37+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:20:15+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:20:19+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T17:20:28+00:00 CRITICAL Uncaught Error: Call to a member function get_upsells() on string in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\components\component-recommended.php:15
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template.php(690): require()
+#1 D:\_OSPanel\domains\emperika\wp-includes\template.php(647): load_template('D:\\_OSPanel\\dom...', false)
+#2 D:\_OSPanel\domains\emperika\wp-includes\general-template.php(155): locate_template(Array, true, false)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\single-product.php(54): get_template_part('components/comp...', 'recommended')
+#4 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#6 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#7 {main}
+  thrown
+
+2017-11-18T20:20:28+00:00 CRITICAL Uncaught Error: Call to a member function get_checkout_fields() on null in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\page-cart.php:170
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include()
+#1 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#3 {main}
+  thrown
+
+2017-11-18T20:21:20+00:00 CRITICAL Uncaught Error: Call to a member function is_registration_enabled() on null in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\page-cart.php:192
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include()
+#1 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#3 {main}
+  thrown
+
+2017-11-18T20:21:52+00:00 CRITICAL Uncaught Error: Call to a member function is_registration_enabled() on null in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\page-cart.php:192
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include()
+#1 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#3 {main}
+  thrown
+
+2017-11-18T20:22:51+00:00 CRITICAL Uncaught Error: Call to a member function is_registration_enabled() on null in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\page-cart.php:191
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\template-loader.php(74): include()
+#1 D:\_OSPanel\domains\emperika\wp-blog-header.php(19): require_once('D:\\_OSPanel\\dom...')
+#2 D:\_OSPanel\domains\emperika\index.php(17): require('D:\\_OSPanel\\dom...')
+#3 {main}
+  thrown
+
+2017-11-19T14:04:35+00:00 CRITICAL Uncaught Error: Call to a member function get_value() on array in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\functions.php:495
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\class-wp-hook.php(286): customise_checkout_field(Array)
+#1 D:\_OSPanel\domains\emperika\wp-includes\plugin.php(203): WP_Hook->apply_filters(Array, Array)
+#2 D:\_OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\class-wc-checkout.php(225): apply_filters('woocommerce_che...', Array)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\checkout\form-checkout.php(4): WC_Checkout->get_checkout_fields()
+#4 D:\_OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\wc-core-functions.php(209): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(242): wc_get_template('checkout/form-c...', Array)
+#6 D:\_OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-sho
+
+2017-11-19T14:04:54+00:00 CRITICAL Uncaught Error: Call to a member function get_value() on array in D:\_OSPanel\domains\emperika\wp-content\themes\emperika\functions.php:495
+Stack trace:
+#0 D:\_OSPanel\domains\emperika\wp-includes\class-wp-hook.php(286): customise_checkout_field(Array)
+#1 D:\_OSPanel\domains\emperika\wp-includes\plugin.php(203): WP_Hook->apply_filters(Array, Array)
+#2 D:\_OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\class-wc-checkout.php(225): apply_filters('woocommerce_che...', Array)
+#3 D:\_OSPanel\domains\emperika\wp-content\themes\emperika\woocommerce\checkout\form-checkout.php(4): WC_Checkout->get_checkout_fields()
+#4 D:\_OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\wc-core-functions.php(209): include('D:\\_OSPanel\\dom...')
+#5 D:\_OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(242): wc_get_template('checkout/form-c...', Array)
+#6 D:\_OSPanel\domains\emperika\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-sho
+

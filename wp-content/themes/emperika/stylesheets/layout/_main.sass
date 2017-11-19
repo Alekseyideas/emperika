@@ -36,6 +36,56 @@ img
     outline: 0
     background: none
     border: 0
+  &__border
+    &--blue
+      border: 1px solid $blue
+      &:hover
+        border: 1px solid $blue
+        background: $blue
+        color: white
+
+.product_type_simple,
+.add_to_cart_button
+  display: block
+  margin: 10px 0
+  border: 1px solid $blue
+  background: none
+  border-radius: 3px
+  color: $blue
+  font-size: 18px
+  text-align: center
+  &:hover
+    background: $blue
+    color: white
+.clickBuyButton
+  border: 0 !important
+  background: none !important
+  font-size: 18px !important
+  text-decoration: underline !important
+  display: block !important
+  margin: 0 !important
+  &:hover
+    &:not(:active)
+      box-shadow: none !important
+    box-shadow: none !important
+    border: 0 !important
+    color: $blue !important
+  &:focus
+    background: none !important
+.added_to_cart
+  position: absolute
+  top: 0
+  right: 0
+  font-size: 14px
+  font-weight: normal
+  &::after
+    content: ''
+    display: none
+.showMore
+  font-size: 20px
+  padding: 5px 30px
+  margin: 20px
+
 .relative
   position: relative
 
@@ -47,9 +97,13 @@ img
     margin: 40px 0
     &--blue
       color: $blue
+    &--white
+      color: white
 a
   &:hover
     text-decoration: none
+.address-field
+  display: none
 @media screen and (min-width: 768px)
   .mobile
     display: none

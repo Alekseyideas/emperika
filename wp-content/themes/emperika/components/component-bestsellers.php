@@ -12,14 +12,16 @@ $sale = get_post_meta( get_the_ID(), '_sale_price', true);
 
     <div class="row">
         <div class="mobile">
+
+
+        </div>
+        <div class="tablet"></div>
+        <div class="desktop">
 	        <?php
 	        GetLoopProduct (8,'total_sales');
 	        // Setup your custom query
 	        ?>
-
         </div>
-        <div class="tablet"></div>
-        <div class="desktop"></div>
     </div>
 
 

@@ -15,29 +15,18 @@
 get_header(); ?>
 
 <section class="mainSlider owl-carousel">
-    <?php get_template_part( 'components/component', 'slider' ); ?>
+    <?php get_template_part( 'components/home/component', 'slider' ); ?>
 </section>
-<?php get_template_part( 'components/component', 'why' ); ?>
-<?php get_template_part( 'components/component', 'home-warm-floors' ); ?>
+<?php get_template_part( 'components/home/component', 'why' ); ?>
+<?php get_template_part( 'components/home/component', 'home-warm-floors' ); ?>
 <?php get_template_part( 'components/component', 'bestsellers' ); ?>
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<?php get_template_part( 'components/home/component', 'home-about-us' ); ?>
+<?php get_template_part( 'components/home/component', 'home-services' ); ?>
+<?php get_template_part( 'components/home/component', 'home-video' ); ?>
+<?php get_template_part( 'components/home/component', 'home-news' ); ?>
 
-			<?php
-			/**
-			 * Functions hooked in to homepage action
-			 *
-			 * @hooked storefront_homepage_content      - 10
-			 * @hooked storefront_product_categories    - 20
-			 * @hooked storefront_recent_products       - 30
-			 * @hooked storefront_featured_products     - 40
-			 * @hooked storefront_popular_products      - 50
-			 * @hooked storefront_on_sale_products      - 60
-			 * @hooked storefront_best_selling_products - 70
-			 */
-			do_action( 'homepage' ); ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+
+
 <?php
 get_footer();

@@ -1,0 +1,25 @@
+.home-video
+  &__wrapper
+    position: relative
+  &__bg
+    position: absolute
+    width: 100%
+    height: 100%
+    background: url("../images/home-video/bg.jpg") no-repeat center / cover
+    left: 0
+    top: 0
+    z-index: 2
+  iframe
+    min-height: 600px
+  &__btn
+    span
+      display: block
+      font-size: 36px
+      color: white
+    svg
+      fill: white
+    &:hover
+      svg
+        fill: $blue
+      span
+        color: $blue

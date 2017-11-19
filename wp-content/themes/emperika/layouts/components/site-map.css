@@ -1,0 +1,11 @@
+.site-map {
+  background: #faf8f8;
+  font-size: 24px; }
+  .site-map .menu {
+    margin: 0;
+    padding: 0; }
+    .site-map .menu li {
+      list-style: none; }
+      .site-map .menu li a {
+        color: black;
+        font-size: 18px; }

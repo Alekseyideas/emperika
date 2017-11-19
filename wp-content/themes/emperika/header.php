@@ -42,7 +42,7 @@ get_template_part( 'components/component', 'product' );
                         <div class="cartMain cart-contents"></div>
                     </div>
                     <a href="/" class="site-header__mobileLogo">
-                        <img src="<?php echo get_template_directory_uri()?>/images/main/logo.png" alt="logo-mobile">
+                        <img src="<?php echo get_template_directory_uri()?>/images/main/logo.svg" alt="logo-mobile">
                     </a>
                     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                         <symbol id="disc" viewbox="0 0 30 22">
@@ -98,7 +98,7 @@ get_template_part( 'components/component', 'product' );
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
-                            <a href="/" class="main-logo"><img src="<?php echo get_template_directory_uri()?>/images/main/logo.png" alt="logo"></a>
+                            <a href="/" class="main-logo"><img src="<?php echo get_template_directory_uri()?>/images/main/logo.svg" alt="logo"></a>
                         </div>
                         <div class="col-lg-7 col-md-6 col-sm-4 col-xs-4" style="position: inherit">
 

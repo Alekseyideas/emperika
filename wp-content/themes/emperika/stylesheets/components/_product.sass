@@ -4,10 +4,11 @@
     border: 1px solid #f0f0f0
     width: 100%
     box-sizing: border-box
-    padding: 20px
+    padding: 30px 20px 0
     text-align: center
     position: relative
     margin-bottom: 30px
+    .product_type_simple,
     .add_to_cart_button
       display: block
       margin: 10px 0
@@ -74,3 +75,15 @@
     font-weight: bold
   &__currency
     font-size: .8em
+
+  &__availability
+    position: absolute
+    top: 0
+    left: 0
+    padding: 10px
+    i
+      margin-right: 10px
+    &--not-available
+      color: red
+    &--available
+      color: #87d37c

@@ -117,7 +117,11 @@ function front_phone(){
 }
 
 register_nav_menus( array(
-    'menu-1' => esc_html__( 'Primary', 'emperika' ),
+    /*'menu-1' => esc_html__( 'Primary', 'emperika' ),*/
+    'Company' => esc_html__( 'Company', 'emperika' ),
+    'Service' => esc_html__( 'Service', 'emperika' ),
+    'Orders' => esc_html__( 'Orders', 'emperika' ),
+    'Legal' => esc_html__( 'Legal field', 'emperika' ),
 ) );
 
 
@@ -151,6 +155,9 @@ function getProductName($catName){
 	wp_reset_postdata();
 }
 
+
+
+// Замена символа валюты
 add_filter( 'woocommerce_currencies', 'add_my_currency' );
 
 function add_my_currency( $currencies ) {
@@ -160,6 +167,7 @@ function add_my_currency( $currencies ) {
 	return $currencies;
 
 }
+
 
 add_filter('woocommerce_currency_symbol', 'add_my_currency_symbol', 10, 2);
 
@@ -177,7 +185,7 @@ function add_my_currency_symbol( $currency_symbol, $currency ) {
 
 
 
-
+// Шаблон цыкла продукта
 function Product($loop){
 	$term_list = wp_get_post_terms(get_the_ID(),'product_cat',array('fields'=>'ids'));
 	$cat_id = (int)$term_list[0];
@@ -191,15 +199,10 @@ function Product($loop){
 	$product_oldPrice = get_post_meta(get_the_ID(),"_sale_price",true );
 	$product_oldPrice = $product_oldPrice > 0 ? number_format(get_post_meta( get_the_ID(), "_sale_price", true),"0", "  "," ") : false;
 	$product__currency = '<span class="product__currency">&nbsp;грн</span>';
-	$product__oldCurrency =  $product_oldPrice > 0 ? $product__currency : false;;
+	$product__oldCurrency =  $product_oldPrice > 0 ? $product__currency : false;
 
 	$product_catName = get_term_field ('name',$cat_id, 'product_cat');
 	$product_catLink = get_term_link ($cat_id, 'product_cat');
-
-
-
-
-
 
 	echo '
 		  	<a href="'.$product_link.'" class="product__image">
@@ -223,10 +226,249 @@ function Product($loop){
 }
 
 
-
-function Emperika_filter_plugin_updates($value) {
+// Отключение плагина
+/*function Emperika_filter_plugin_updates($value) {
 	unset($value->response['advanced-custom-fields-pro/acf.php']);
 
 	return $value;
 }
-add_filter('site_transient_update_plugins', 'Emperika_filter_plugin_updates');
+add_filter('site_transient_update_plugins', 'Emperika_filter_plugin_updates');*/
+
+
+
+/*function filter_plugin_updates( $update ) {
+	global $DISABLE_UPDATE; // указывается в wp-config.php
+	if( !is_array($DISABLE_UPDATE) || count($DISABLE_UPDATE) == 0 ){  return $update;  }
+	foreach( $update->response as $name => $val ){
+		foreach( $DISABLE_UPDATE as $plugin ){
+			if( stripos($name,$plugin) !== false ){
+				unset( $update->response[ $name ] );
+			}
+		}
+	}
+	return $update;
+}
+add_filter( 'site_transient_update_plugins', 'filter_plugin_updates' );
+
+*/
+
+
+
+// Наличие товара
+function woocommerce_template_loop_stock() {
+	global $product;
+	if ( ! $product->managing_stock() && ! $product->is_in_stock() )
+		echo '<div class="product__availability product__availability--not-available"><i class="fa fa-times-circle" aria-hidden="true"></i><span>Нет в наличии</span></div>';
+	else
+		echo '<div class="product__availability product__availability--available"><i class="fa fa-check-circle" aria-hidden="true"></i><span>В наличии</span></div>';
+}
+
+
+
+
+/*
+ * "Хлебные крошки" для WordPress
+ * лицензия: MIT
+*/
+function dimox_breadcrumbs() {
+
+	/* === ОПЦИИ === */
+	$text['home'] = 'Главная'; // текст ссылки "Главная"
+	$text['category'] = '%s'; // текст для страницы рубрики
+	$text['search'] = 'Результаты поиска по запросу "%s"'; // текст для страницы с результатами поиска
+	$text['tag'] = 'Записи с тегом "%s"'; // текст для страницы тега
+	$text['author'] = 'Статьи автора %s'; // текст для страницы автора
+	$text['404'] = 'Ошибка 404'; // текст для страницы 404
+	$text['page'] = 'Страница %s'; // текст 'Страница N'
+	$text['cpage'] = 'Страница комментариев %s'; // текст 'Страница комментариев N'
+
+	$wrap_before = '<div class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">'; // открывающий тег обертки
+	$wrap_after = '</div><!-- .breadcrumbs -->'; // закрывающий тег обертки
+	$sep = '/'; // разделитель между "крошками"
+	$sep_before = '<span class="sep">'; // тег перед разделителем
+	$sep_after = '</span>'; // тег после разделителя
+	$show_home_link = 1; // 1 - показывать ссылку "Главная", 0 - не показывать
+	$show_on_home = 0; // 1 - показывать "хлебные крошки" на главной странице, 0 - не показывать
+	$show_current = 1; // 1 - показывать название текущей страницы, 0 - не показывать
+	$before = '<span class="current">'; // тег перед текущей "крошкой"
+	$after = '</span>'; // тег после текущей "крошки"
+	/* === КОНЕЦ ОПЦИЙ === */
+
+	global $post;
+	$home_url = home_url('/');
+	$link_before = '<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">';
+	$link_after = '</span>';
+	$link_attr = ' itemprop="item"';
+	$link_in_before = '<span itemprop="name">';
+	$link_in_after = '</span>';
+	$link = $link_before . '<a href="%1$s"' . $link_attr . '>' . $link_in_before . '%2$s' . $link_in_after . '</a>' . $link_after;
+	$frontpage_id = get_option('page_on_front');
+	$parent_id = ($post) ? $post->post_parent : '';
+	$sep = ' ' . $sep_before . $sep . $sep_after . ' ';
+	$home_link = $link_before . '<a href="' . $home_url . '"' . $link_attr . ' class="home">' . $link_in_before . $text['home'] . $link_in_after . '</a>' . $link_after;
+
+	if (is_home() || is_front_page()) {
+
+		if ($show_on_home) echo $wrap_before . $home_link . $wrap_after;
+
+	} else {
+
+		echo $wrap_before;
+		if ($show_home_link) echo $home_link;
+
+		if ( is_category() ) {
+			$cat = get_category(get_query_var('cat'), false);
+			if ($cat->parent != 0) {
+				$cats = get_category_parents($cat->parent, TRUE, $sep);
+				$cats = preg_replace("#^(.+)$sep$#", "$1", $cats);
+				$cats = preg_replace('#<a([^>]+)>([^<]+)<\/a>#', $link_before . '<a$1' . $link_attr .'>' . $link_in_before . '$2' . $link_in_after .'</a>' . $link_after, $cats);
+				if ($show_home_link) echo $sep;
+				echo $cats;
+			}
+			if ( get_query_var('paged') ) {
+				$cat = $cat->cat_ID;
+				echo $sep . sprintf($link, get_category_link($cat), get_cat_name($cat)) . $sep . $before . sprintf($text['page'], get_query_var('paged')) . $after;
+			} else {
+				if ($show_current) echo $sep . $before . sprintf($text['category'], single_cat_title('', false)) . $after;
+			}
+
+		} elseif ( is_search() ) {
+			if (have_posts()) {
+				if ($show_home_link && $show_current) echo $sep;
+				if ($show_current) echo $before . sprintf($text['search'], get_search_query()) . $after;
+			} else {
+				if ($show_home_link) echo $sep;
+				echo $before . sprintf($text['search'], get_search_query()) . $after;
+			}
+
+		} elseif ( is_day() ) {
+			if ($show_home_link) echo $sep;
+			echo sprintf($link, get_year_link(get_the_time('Y')), get_the_time('Y')) . $sep;
+			echo sprintf($link, get_month_link(get_the_time('Y'), get_the_time('m')), get_the_time('F'));
+			if ($show_current) echo $sep . $before . get_the_time('d') . $after;
+
+		} elseif ( is_month() ) {
+			if ($show_home_link) echo $sep;
+			echo sprintf($link, get_year_link(get_the_time('Y')), get_the_time('Y'));
+			if ($show_current) echo $sep . $before . get_the_time('F') . $after;
+
+		} elseif ( is_year() ) {
+			if ($show_home_link && $show_current) echo $sep;
+			if ($show_current) echo $before . get_the_time('Y') . $after;
+
+		} elseif ( is_single() && !is_attachment() ) {
+			if ($show_home_link) echo $sep;
+			if ( get_post_type() != 'post' ) {
+				$post_type = get_post_type_object(get_post_type());
+				$slug = $post_type->rewrite;
+				printf($link, $home_url . $slug['slug'] . '/', $post_type->labels->singular_name);
+				if ($show_current) echo $sep . $before . get_the_title() . $after;
+			} else {
+				$cat = get_the_category(); $cat = $cat[0];
+				$cats = get_category_parents($cat, TRUE, $sep);
+				if (!$show_current || get_query_var('cpage')) $cats = preg_replace("#^(.+)$sep$#", "$1", $cats);
+				$cats = preg_replace('#<a([^>]+)>([^<]+)<\/a>#', $link_before . '<a$1' . $link_attr .'>' . $link_in_before . '$2' . $link_in_after .'</a>' . $link_after, $cats);
+				echo $cats;
+				if ( get_query_var('cpage') ) {
+					echo $sep . sprintf($link, get_permalink(), get_the_title()) . $sep . $before . sprintf($text['cpage'], get_query_var('cpage')) . $after;
+				} else {
+					if ($show_current) echo $before . get_the_title() . $after;
+				}
+			}
+
+			// custom post type
+		} elseif ( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
+			$post_type = get_post_type_object(get_post_type());
+			if ( get_query_var('paged') ) {
+				echo $sep . sprintf($link, get_post_type_archive_link($post_type->name), $post_type->label) . $sep . $before . sprintf($text['page'], get_query_var('paged')) . $after;
+			} else {
+				if ($show_current) echo $sep . $before . $post_type->label . $after;
+			}
+
+		} elseif ( is_attachment() ) {
+			if ($show_home_link) echo $sep;
+			$parent = get_post($parent_id);
+			$cat = get_the_category($parent->ID); $cat = $cat[0];
+			if ($cat) {
+				$cats = get_category_parents($cat, TRUE, $sep);
+				$cats = preg_replace('#<a([^>]+)>([^<]+)<\/a>#', $link_before . '<a$1' . $link_attr .'>' . $link_in_before . '$2' . $link_in_after .'</a>' . $link_after, $cats);
+				echo $cats;
+			}
+			printf($link, get_permalink($parent), $parent->post_title);
+			if ($show_current) echo $sep . $before . get_the_title() . $after;
+
+		} elseif ( is_page() && !$parent_id ) {
+			if ($show_current) echo $sep . $before . get_the_title() . $after;
+
+		} elseif ( is_page() && $parent_id ) {
+			if ($show_home_link) echo $sep;
+			if ($parent_id != $frontpage_id) {
+				$breadcrumbs = array();
+				while ($parent_id) {
+					$page = get_page($parent_id);
+					if ($parent_id != $frontpage_id) {
+						$breadcrumbs[] = sprintf($link, get_permalink($page->ID), get_the_title($page->ID));
+					}
+					$parent_id = $page->post_parent;
+				}
+				$breadcrumbs = array_reverse($breadcrumbs);
+				for ($i = 0; $i < count($breadcrumbs); $i++) {
+					echo $breadcrumbs[$i];
+					if ($i != count($breadcrumbs)-1) echo $sep;
+				}
+			}
+			if ($show_current) echo $sep . $before . get_the_title() . $after;
+
+		} elseif ( is_tag() ) {
+			if ( get_query_var('paged') ) {
+				$tag_id = get_queried_object_id();
+				$tag = get_tag($tag_id);
+				echo $sep . sprintf($link, get_tag_link($tag_id), $tag->name) . $sep . $before . sprintf($text['page'], get_query_var('paged')) . $after;
+			} else {
+				if ($show_current) echo $sep . $before . sprintf($text['tag'], single_tag_title('', false)) . $after;
+			}
+
+		} elseif ( is_author() ) {
+			global $author;
+			$author = get_userdata($author);
+			if ( get_query_var('paged') ) {
+				if ($show_home_link) echo $sep;
+				echo sprintf($link, get_author_posts_url($author->ID), $author->display_name) . $sep . $before . sprintf($text['page'], get_query_var('paged')) . $after;
+			} else {
+				if ($show_home_link && $show_current) echo $sep;
+				if ($show_current) echo $before . sprintf($text['author'], $author->display_name) . $after;
+			}
+
+		} elseif ( is_404() ) {
+			if ($show_home_link && $show_current) echo $sep;
+			if ($show_current) echo $before . $text['404'] . $after;
+
+		} elseif ( has_post_format() && !is_singular() ) {
+			if ($show_home_link) echo $sep;
+			echo get_post_format_string( get_post_format() );
+		}
+
+		echo $wrap_after;
+
+	}
+}
+
+
+/*add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+
+function custom_override_checkout_fields( $fields ) {
+
+	$fields['billing']['billing_first_name']['label'] = 'Фамилия Имя';
+
+
+
+	unset($fields['billing']['billing_last_name']);
+	unset($fields['billing']['billing_company']);
+	unset($fields['billing']['billing_address_2']);
+	unset($fields['billing']['billing_city']);
+
+
+	return $fields;
+}
+*/
+
