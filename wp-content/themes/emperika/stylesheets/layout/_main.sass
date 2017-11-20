@@ -99,6 +99,8 @@ img
       color: $blue
     &--white
       color: white
+    &--30px
+      font-size: 30px
 a
   &:hover
     text-decoration: none
@@ -125,8 +127,20 @@ ul#shipping_method li
       width: 250px
 .catTitle
   margin-bottom: 30px
+
+.products
+  li
+    max-width: 230px
+    margin: 20px !important
+    img
+      height: 120px
+      width: auto
+.columns-3
+  ul.products li.product.first
+    clear: none !important
 @media screen and (min-width: 768px)
   .mobile
     display: none
+
 
 

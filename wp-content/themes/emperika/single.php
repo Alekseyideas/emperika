@@ -6,9 +6,10 @@
  */
 
 get_header(); ?>
-111
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<?php get_template_part( 'components/component', 'crumbs' ); ?>
+    <br>
+	<section style="font-size: 18px">
+		<div class="container site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post();
 
@@ -20,9 +21,8 @@ get_header(); ?>
 
 		endwhile; // End of the loop. ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</div><!-- #main -->
+	</section><!-- #primary -->
 
 <?php
-do_action( 'storefront_sidebar' );
 get_footer();

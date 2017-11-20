@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-<section>
+<section >
     <div class="container">
 	    <?php if ( have_posts() ) :
 

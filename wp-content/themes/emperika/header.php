@@ -172,13 +172,76 @@ get_template_part( 'components/component', 'product' );
                                         </div>
                                     </div>
                                     <div class="menu-main__item">
-                                        <a href="#">Услуги</a>
+                                        <a href="<?php echo get_page_link(32)?>">Услуги</a>
+                                        <div class="menu-main__cats">
+                                            <div class="container">
+                                                <div class="col-md-3">
+				                                    <?php
+				                                    $catName = 'nagrevatelnyj-kabel';
+
+				                                    getProductCat($catName)
+
+				                                    ?>
+
+                                                    <div class="menu-main__productNames">
+					                                    <?php getProductName($catName);?>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+				                                    <?php
+				                                    $catName = 'nagrevatelnyj-mat';
+
+				                                    getProductCat($catName)
+
+				                                    ?>
+
+                                                    <div class="menu-main__productNames">
+					                                    <?php getProductName($catName);?>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+				                                    <?php
+				                                    $catName = 'regulyatory';
+
+				                                    getProductCat($catName)
+
+				                                    ?>
+
+                                                    <div class="menu-main__productNames">
+					                                    <?php getProductName($catName);?>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-3">
+				                                    <?php
+				                                    $catName = '	sistemy-snegotayaniya';
+
+				                                    getProductCat($catName)
+
+				                                    ?>
+
+                                                    <div class="menu-main__productNames">
+					                                    <?php getProductName($catName);?>
+                                                    </div>
+				                                    <?php
+				                                    $catName = 'konditsionery';
+
+				                                    getProductCat($catName)
+
+				                                    ?>
+
+                                                    <div class="menu-main__productNames">
+					                                    <?php getProductName($catName);?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="menu-main__item">
-                                        <a href="#">Вопросы</a>
+                                        <a href="<?php echo get_page_link(25)?>">Вопросы</a>
                                     </div>
                                     <div class="menu-main__item">
-                                        <a href="#">Контакты</a>
+                                        <a href="<?php echo get_page_link(27)?>">Контакты</a>
                                     </div>
                                 </div>
 
