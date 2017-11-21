@@ -500,3 +500,20 @@ function woo_custom_product_searchform( $form ) {
 	return $form;
 
 }
+
+
+
+add_filter( 'woocommerce_after_shop_loop_item', 'quantity_inputs_for_woocommerce_loop_add_to_cart_link');
+function quantity_inputs_for_woocommerce_loop_add_to_cart_link( ) {
+	woocommerce_template_loop_stock();
+}
+
+
+function woocommerce_template_loop_product_thumbnail() {
+	$product_img = get_the_post_thumbnail_url();
+	$product_link = get_permalink();
+	echo '<a href="'.$product_link.'" class="product__image">
+	 	<img src="'.$product_img.'" alt="product">
+	 </a> <br>';
+
+}

@@ -4,6 +4,10 @@ Author		: Icegram
 Author URI	: https://www.icegram.com/
 License		: GPLv3
 
+************************************************************Version 3.4.4************************************************************
+
+* New: Introduce [Email Subscribers Pro](https://www.icegram.com/email-subscribers-pricing/) plan
+
 ************************************************************Version 3.4.3************************************************************
 
 * Fix: Templates showing up in frontend search results

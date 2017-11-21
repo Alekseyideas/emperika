@@ -4,8 +4,8 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Author URI: https://www.icegram.com/
 Tags: email marketing, email newsletter form, email signup, email widget, newsletter, newsletter signup, subscribe, subscription form, bulk emails, signup form, list builder, lead generation
 Requires at least: 3.4
-Tested up to: 4.8.3
-Stable tag: 3.4.3
+Tested up to: 4.9
+Stable tag: 3.4.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses
 
@@ -311,6 +311,10 @@ Use our free plugin [Email Subscribers - Group Selector](https://wordpress.org/p
 11. Admin page - Delivery Report of emails i.e. email sent, opened, viewed status, viewed date
 
 == Changelog ==
+
+= 3.4.4 (21.11.2017) =
+
+* New: Introduce [Email Subscribers Pro](https://www.icegram.com/email-subscribers-pricing/) plan
 
 = 3.4.3 (17.11.2017) =
 
@@ -677,6 +681,10 @@ Use our free plugin [Email Subscribers - Group Selector](https://wordpress.org/p
 For the changelog of earlier versions, please refer to the separate [changelog.txt](https://plugins.svn.wordpress.org/email-subscribers/trunk/changelog.txt) file.
 
 == Upgrade Notice ==
+
+= 3.4.4 (21.11.2017) =
+
+* New: Introduce [Email Subscribers Pro](https://www.icegram.com/email-subscribers-pricing/) plan
 
 = 3.4.3 (17.11.2017) =
 

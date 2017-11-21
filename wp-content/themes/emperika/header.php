@@ -204,7 +204,7 @@ get_template_part( 'components/component', 'product' );
                                                                   </a>
 						                                    ';
 					                                    endwhile;
-
+					                                    wp_reset_postdata();
                                                     }
 
 

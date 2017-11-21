@@ -868,19 +868,19 @@ class es_cls_registerhook {
 		);
 
 		$args = array(
-			'labels'              => $labels,
-			'public'              => true,
-			'publicly_queryable'  => false,
+			'labels'             => $labels,
+            'public'             => true,
+			'publicly_queryable' => false,
 			'exclude_from_search' => true,
-			'show_ui'             => true,
-			'show_in_menu'        => 'edit.php?post_type=es_template',
-			'query_var'           => true,
-			'rewrite'             => array( 'slug' => 'es_template' ),
-			'capability_type'     => 'post',
-			'has_archive'         => false,
-			'hierarchical'        => false,
-			'menu_position'       => null,
-			'supports'            => array( 'title', 'editor', 'thumbnail')
+			'show_ui'            => true,
+            'show_in_menu'       => 'edit.php?post_type=es_template',
+			'query_var'          => true,
+			'rewrite'            => array( 'slug' => 'es_template' ),
+			'capability_type'    => 'post',
+			'has_archive'        => false,
+			'hierarchical'       => false,
+			'menu_position'      => null,
+			'supports'           => array( 'title', 'editor', 'thumbnail')
 		);
 
 		register_post_type( 'es_template', $args );
@@ -928,20 +928,20 @@ class es_cls_registerhook {
 		return $column; 
 	}
 
-	public static function es_add_admin_css() {
+	public static function es_add_admin_css(){
 
 		global $current_screen;
 
 		if($current_screen->post_type != 'es_template') return;
 
-		?>
+	?>
 		<style type="text/css">
 			.column-es_templ_thumbnail, #es_templ_thumbnail,
 			.column-es_templ_type, #es_templ_type {
 				text-align: center !important;
 			}
 		</style>
-		<?php
+	<?php
 	}
 
 	public static function es_add_template_action( $actions, $post ) {
@@ -966,16 +966,16 @@ class es_cls_registerhook {
 			$es_templ_type = get_post_meta($post->ID, 'es_template_type', true);
 		}
 		?>
-		<p style="margin-top: 0em; !important;">
-			<?php echo __( 'Available Keyword for Post Notification: {{POSTTITLE}}', ES_TDOMAIN ); ?>
-		</p>
-		<p>
-			<label for="tag-link"><?php echo __( 'Select your Email Template Type', ES_TDOMAIN ); ?></label><br/>
-			<select name="es_template_type" id="es_template_type">
-				<option value='Newsletter' <?php if( $es_templ_type == 'Newsletter' ) { echo 'selected="selected"' ; } ?>><?php echo __( 'Newsletter', ES_TDOMAIN ); ?></option>
-				<option value='Post Notification' <?php if( $es_templ_type == 'Post Notification' ) { echo 'selected="selected"' ; } ?>><?php echo __( 'Post Notification', ES_TDOMAIN ); ?></option>
-			</select>
-		</p>
+			<p style="margin-top: 0em; !important;">
+				<?php echo __( 'Available Keyword for Post Notification: {{POSTTITLE}}', ES_TDOMAIN ); ?>
+			</p>
+			<p>
+				<label for="tag-link"><?php echo __( 'Select your Email Template Type', ES_TDOMAIN ); ?></label><br/>
+				<select name="es_template_type" id="es_template_type">
+					<option value='Newsletter' <?php if( $es_templ_type == 'Newsletter' ) { echo 'selected="selected"' ; } ?>><?php echo __( 'Newsletter', ES_TDOMAIN ); ?></option>
+					<option value='Post Notification' <?php if( $es_templ_type == 'Post Notification' ) { echo 'selected="selected"' ; } ?>><?php echo __( 'Post Notification', ES_TDOMAIN ); ?></option>
+				</select>
+			</p>
 		<?php
 	}
 
@@ -1009,7 +1009,7 @@ class es_cls_registerhook {
 
 		global $post;
 		if ($post->post_type != 'es_template') return;
-
+		
 		$es_templ_type = get_post_meta($post->ID, 'es_template_type', true);
 		$page = ($es_templ_type == 'Newsletter') ? 'es-sendemail' : 'es-notification';
 		$preview_url = ES_ADMINURL."?page=".$page."&amp;ac=preview&did=".$post->ID;

@@ -52,4 +52,8 @@ jQuery(document).ready(function ($) {
         $('.btnCaRtUpdate').prop("disabled", false);
         AjaxCart();
     });
+
+    /*    $('.mobile-menu a').each(function () {
+            $(this).text().length === 0 ? $(this).remove() : false;
+        });*/
 });

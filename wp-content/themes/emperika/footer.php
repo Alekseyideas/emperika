@@ -69,6 +69,10 @@
         </div>
 	</footer><!-- #colophon -->
 
+
+
+<?php get_template_part( 'components/component', 'mobile-menu' ); ?>
+
 	<?php do_action( 'storefront_after_footer' ); ?>
 
 </div><!-- #page -->

@@ -21,10 +21,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header( 'shop' ); ?>
-<?
+<?/*
 
 if(is_search()){
-?>
+*/?>
 
 <div class="container">
 	<?php if ( have_posts() ) : ?>
@@ -86,21 +86,21 @@ if(is_search()){
 
 
 
+<!--
 
-
-<?}else{?>
+<?/*}else{*/?>
 <section>
     <div class="container">
         <div class="text-center">
-	        <?php getProductCatTitle($category_name)?>
+	        <?php /*getProductCatTitle($category_name)*/?>
         </div>
 
         <div class="row">
-            <?GetLoopProduct (60,'','',$category_name);?>
+            <?/*GetLoopProduct (60,'','',$category_name);*/?>
         </div>
     </div>
 </section>
-    <?}?>
+    --><?/*}*/?>
 <?php get_template_part( 'components/home/component', 'home-news' ); ?>
 <?php
 get_footer();
