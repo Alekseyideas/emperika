@@ -177,62 +177,64 @@ get_template_part( 'components/component', 'product' );
                                             <div class="container">
                                                 <div class="col-md-3">
 				                                    <?php
-				                                    $catName = 'nagrevatelnyj-kabel';
 
-				                                    getProductCat($catName)
+                                                    function GetServName($num){
+	                                                    $term = get_term( $num, 'setvices_cat','','' );
+	                                                    echo ' <a  class="menu-main__catTitle" href="#">'.$term -> name.'</a>';
+                                                    }
+
+
+
+				                                    function GetServServPost($num){
+					                                    $args = array(
+						                                    'post_type' => 'services',
+						                                    'tax_query' => array(
+							                                    array(
+								                                    'taxonomy' => 'setvices_cat',
+								                                    'field' => 'term_id',
+								                                    'terms' => $num,
+							                                    )
+						                                    )
+					                                    );
+					                                    $loop = new WP_Query( $args );
+					                                    while ( $loop->have_posts() ) : $loop->the_post();
+						                                    echo '
+                                                                 <a href="'.get_permalink().'" class="menu-main__catTitle">
+                                                                   <h2>   '. get_the_title().'</h2>
+                                                                  </a>
+						                                    ';
+					                                    endwhile;
+
+                                                    }
+
 
 				                                    ?>
-
+                                                            <?php
+                                                                $term = '24';
+                                                                GetServName($term);
+                                                            ?>
                                                     <div class="menu-main__productNames">
-					                                    <?php getProductName($catName);?>
+					                                    <?php GetServServPost($term);?>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
-				                                    <?php
-				                                    $catName = 'nagrevatelnyj-mat';
-
-				                                    getProductCat($catName)
-
-				                                    ?>
-
+	                                                <?php
+	                                                $term = '25';
+	                                                GetServName($term);
+	                                                ?>
                                                     <div class="menu-main__productNames">
-					                                    <?php getProductName($catName);?>
+		                                                <?php GetServServPost($term);?>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
-				                                    <?php
-				                                    $catName = 'regulyatory';
-
-				                                    getProductCat($catName)
-
-				                                    ?>
-
+	                                                <?php
+	                                                $term = '26';
+	                                                GetServName($term);
+	                                                ?>
                                                     <div class="menu-main__productNames">
-					                                    <?php getProductName($catName);?>
+		                                                <?php GetServServPost($term);?>
                                                     </div>
 
-                                                </div>
-                                                <div class="col-md-3">
-				                                    <?php
-				                                    $catName = '	sistemy-snegotayaniya';
-
-				                                    getProductCat($catName)
-
-				                                    ?>
-
-                                                    <div class="menu-main__productNames">
-					                                    <?php getProductName($catName);?>
-                                                    </div>
-				                                    <?php
-				                                    $catName = 'konditsionery';
-
-				                                    getProductCat($catName)
-
-				                                    ?>
-
-                                                    <div class="menu-main__productNames">
-					                                    <?php getProductName($catName);?>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
